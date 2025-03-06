@@ -21,8 +21,8 @@
         echo "<p>Sandwich bread: $sandwich_bread </p><br>";
     }
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
-        $cliente = htmlspecialchars($_GET['cliente_get']);
-        $baguetes = intval($_GET['baguetes_get']);
+        $cliente = htmlspecialchars($_GET['cliente']);
+        $baguetes = intval($_GET['baguetes']);
         $rolls = intval($_GET['rolls']);
         $sandwich_bread = intval($_GET['sandwich_bread']);
         echo "<h2>Datos recibidos por GET:</h2>";
