@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pan_molde = intval($_POST['pan_molde']);
 
     echo "<h2>Resumen del Pedido</h2>";
-    echo "<p><strong>Nombre:</strong> $nombre</p>";
+    echo "<p>Nombre: $nombre</p>";
     echo "<ul>";
     if ($baguettes > 0) echo "<li>Baguettes: $baguettes</li>";
     if ($panecillos > 0) echo "<li>Panecillos: $panecillos</li>";
@@ -14,8 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "</ul>";
     echo "<p>¡Gracias por su compra!</p>";
 }
-
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+else {
     echo "<h2>Pedido realizado exitosamente. ¡Gracias!</h2>";
 }
 ?>
